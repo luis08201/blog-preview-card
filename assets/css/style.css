@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Figtree', sans-serif;
+}
+
+:root{
+    --text-primary:#f4d04e;
+    --text-100:#ffffff;
+    --text-200:#808080;
+    --text-300:#121212;
+    --fw-400:400;
+    --fw-600:600;
+    --fw-800:800;
+}
+
+body{
+    font-size: 16px;
+    line-height: 24px;
+    background-color: var(--text-primary);
+    color:var(--text-200);
+    font-weight:var(--fw-400);
+}
+
+.page-wrapper{
+    width:100%;
+    min-height:100vh;
+}
+
+.center-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-default{
+    max-width:432px;
+    padding:0 24px;
+    margin:0 auto;
+}
+
+  .section {
+      padding: 48px 0;
+  }
+
+.text-strong{
+    font-weight: var(--fw-800);
+}
+
+.text-300{
+    color:var(--text-300);
+}
+
+.figure {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 22px;
+    height:200px;
+}
+
+.image{
+    width:100%;
+    max-width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.paragraph{
+    color:var(--text-200);
+}
+
+.card{
+    display:block;
+    text-decoration: none;
+    background-color: var(--text-100);
+    padding:24px 24px 20px;
+    border-radius:16px;
+    box-shadow: 6px 4px 0 rgba(18, 18, 18, 1);
+    transition: ease box-shadow 0.3s,
+                ease color 0.3s;
+    opacity: 0;
+    animation: slidetotop 0.5s ease forwards;
+    border:1px solid var(--text-300);
+}
+
+.badge{
+    display:inline-block;
+    border-radius: 4px;
+    background-color: var(--text-primary);
+    color:var(--text-300);
+    padding: 6px 12px;
+    font-weight: var(--fw-800);
+    margin-bottom: 14px;
+}
+
+.subtitle{
+    color:var(--text-300);
+    font-weight: var(--fw-600);
+    margin-bottom: 16px;
+}
+
+.heading-h1{
+    font-size: 24px;
+    font-weight: var(--fw-800);
+    color:var(--text-300);
+    margin-bottom: 16px;
+    transition:ease 0.3s color;
+}
+
+.card:hover .heading-h1{
+    color:var(--text-primary);
+}
+
+.card:hover{
+    box-shadow: 10px 12px 0 rgba(18, 18, 18, 1);
+}
+
+
+.mg-bottom-24px{
+    margin-bottom: 24px;
+}
+
+.card-author{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:12px;
+}
+
+.card-author-figure{
+    width:36px;
+    height:36px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+@keyframes slidetotop {
+    from {
+        opacity: 0;     
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;     
+        transform: translateY(0);        
+    }
+}
+
